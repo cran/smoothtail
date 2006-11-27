@@ -1,0 +1,128 @@
+\name{smoothtail-package}
+\alias{smoothtail-package}
+\alias{smoothtail}
+\alias{tail index}
+\alias{logcon}
+\alias{logcondens}
+\docType{package}
+\title{Smooth Estimation of GPD Shape Parameter}
+
+\description{Given independent and identically distributed observations \eqn{X_1 < \ldots < X_n} from a 
+Generalized Pareto distribution with shape parameter \eqn{\gamma \in [-1,0]}, this package offers three 
+ methods to compute estimates of \eqn{\gamma}. The estimates are based on the principle of replacing the order 
+ statistics \eqn{X_{(1)}, \ldots, X_{(n)}} of the sample by quantiles \eqn{\hat X_{(1)}, \ldots, \hat X_{(n)}} of the distribution function \eqn{\hat F_n} based on the 
+ log--concave density estimator \eqn{\hat f_n}. This procedure is justified by the fact that the GPD density is 
+ log--concave for \eqn{\gamma \in [-1,0]}.}
+\details{
+\tabular{ll}{
+Package: \tab smoothtail\cr
+Type: \tab Package\cr
+Version: \tab 1.0\cr
+Date: \tab 2006-11-27\cr
+License: \tab GPL version 2 or newer \cr
+}
+Use this package to estimate the shape parameter \eqn{\gamma} of a Generalized Pareto Distribution (GPD). In 
+extreme value theory, \eqn{\gamma} is denoted tail index. We offer three new estimators, all based on the fact 
+that the density function of the GPD is log--concave if \eqn{\gamma \in [-1,0]}. The functions for estimation
+of the tail index are:
+
+\code{\link{pickands}} \cr
+\code{\link{falk}}\cr
+\code{\link{falkMVUE}}
+
+Additionally, functions for density, distribution function, quantile function and random number generation for
+a GPD with location parameter 0, shape parameter \eqn{\gamma} and scale parameter \eqn{\sigma} are provided:
+
+\code{\link{dgpd}} \cr
+\code{\link{pgpd}}\cr
+\code{\link{qgpd}}\cr
+\code{\link{rgpd}}.
+
+This package depends on the package \pkg{logcondens} for estimation of a log--concave density.
+
+Let us shortly clarify, what we mean with log--concave density estimation. Suppose we are given an ordered sample
+\eqn{Y_1 < \ldots < Y_n} of i.i.d. random variables having density function \eqn{f}, where \eqn{f = \exp \varphi}
+for a concave function \eqn{\varphi : [-\infty, \infty) \to R}. Following the development in 
+Duembgen and Rufibach (2006), it is then possible to get an estimator \eqn{\hat f_n = \exp \hat \varphi_n} 
+of \eqn{f} via the maximizer \eqn{\hat \varphi_n} of
+
+\deqn{L(\varphi) =  \sum_{i=1}^n \varphi(Y_i) -  \int \exp \varphi (t) d t}
+
+over all concave functions \eqn{\varphi}. It turns out that \eqn{\hat \varphi_n} is piecewise linear, with 
+knots only at (some of the) observation points. Therefore, the infinite-dimensional optimization problem of finding 
+the function \eqn{\hat \varphi_n} boils down to a finite dimensional problem of finding the vector \eqn{(\hat \varphi_n(Y_1),\ldots,\hat \varphi(Y_n))}. 
+How to solve this problem is
+described in Rufibach (2006a, b). The distribution function based on \eqn{\hat f_n} is defined as
+
+\deqn{\hat F_n(x) = \int_{Y_1}^x \hat f_n(t) d t}
+
+for \eqn{x} a real number. The definition of \eqn{\hat F_n} is justified by the fact that \eqn{\hat F_n(Y_1) = 0}.
+}
+\author{
+Kaspar Rufibach (maintainer), \email{kaspar.rufibach@stanford.edu}, \cr \url{http://www.stanford.edu/~kasparr} 
+
+Samuel Mueller, \email{mueller@maths.uwa.edu.au}, \cr \url{http://www.maths.uwa.edu.au/Members/mueller}
+
+Kaspar Rufibach gratefully acknowledges support by the Swiss National Science Foundation SNF, \url{http://www.snf.ch}
+}
+\references{
+Duembgen, L. and Rufibach, K. (2006).
+Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
+Preprint, IMSV, University of Bern.
+
+Mueller, S. and Rufibach K. (2006a).
+Smooth tail index estimation.
+Preprint.
+
+Mueller, S. and Rufibach K. (2006b).
+On the max--domain of attraction of distributions with log--concave densities.
+Submitted.
+
+Rufibach, K. (2006a). 
+Computing maximum likelihood estimators of a log--concave density function. 
+To appear in \emph{Journal of Statistical Computation and Simulation.}
+              
+Rufibach K. (2006b). \emph{Log-concave Density Estimation and Bump Hunting for i.i.d. Observations.}
+PhD Thesis, University of Bern, Switzerland and Georg-August University of Goettingen, Germany, 2006.
+}
+
+\keyword{distribution}
+\keyword{htest}
+\keyword{nonparametric}
+
+\seealso{Package \pkg{logcondens}.}
+
+\examples{
+# generate ordered random sample from GPD
+set.seed(1977)
+n <- 20
+gam <- -0.75
+x <- rgpd(n, gam)
+
+# compute known endpoint
+omega <- -1 / gam
+
+# estimate log-concave density, for illustration purposes
+est <- activeSetLogCon(x)
+
+# plot distribution functions
+s <- seq(0.01, max(x), by = 0.01)
+plot(0, 0, type = 'n', ylim = c(0, 1), xlim = range(c(x, s))); rug(x)
+lines(s, pgpd(s, gam), type = 'l', col = 2)
+lines(x, 1:n / n, type = 's', col = 3)
+lines(x, est$Fhat, type = 'l', col = 4)
+legend(1, 0.4, c('true', 'empirical', 'estimated'), col = c(2 : 4), lty = 1)
+
+# compute tail index estimators
+falk.logcon <- falk(x)
+falkMVUE.logcon <- falkMVUE(x, omega)
+pick.logcon <- pickands(x)
+
+# plot smoothed and unsmoothed estimators versus number of order statistics
+plot(0, 0, type = 'n', xlim = c(0,n), ylim = c(-1, 0.2))
+lines(1:n, pick.logcon[,2], col = 1); lines(1:n, pick.logcon[,3], col = 1, lty = 2)
+lines(1:n, falk.logcon[,2], col = 2); lines(1:n, falk.logcon[,3], col = 2, lty = 2)
+lines(1:n, falkMVUE.logcon[,2], col = 3); lines(1:n, falkMVUE.logcon[,3], col = 3, lty = 2)
+abline(h = gam, lty = 3)
+legend(11, 0.2, c("Pickands", "Falk", "Falk MVUE"), lty = 1, col = 1:6)
+}

@@ -1,0 +1,6 @@
+smoothtail_1.0 (initial version):
+---------------------------------
+- Provide functions to estimate the shape parameter gamma of a Generalized
+  Pareto Distribution based on the fact that its density is log-concave
+  for gamma in [-1,0].
+  Depends on the package logcondens.
