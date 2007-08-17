@@ -26,7 +26,7 @@ the ordinary Falk MVUE estimator based on the order statistics.
 \references{
 Mueller, S. and Rufibach K. (2006).
 Smooth tail index estimation.
-Preprint.
+Preprint, available at \url{http://arxiv.org/abs/math.ST/0612140}.
 
 Falk, M. (1994).
 Extreme quantile estimation in \eqn{\delta}-neighborhoods of generalized Pareto distributions.
@@ -41,7 +41,7 @@ Kaspar Rufibach (maintainer), \email{kaspar.rufibach@stanford.edu}, \cr \url{htt
 
 Samuel Mueller, \email{mueller@maths.uwa.edu.au}, \cr \url{http://www.maths.uwa.edu.au/Members/mueller}
 
-Kaspar Rufibach gratefully acknowledges support by the Swiss National Science Foundation SNF, \url{http://www.snf.ch}
+Kaspar Rufibach acknowledges support by the Swiss National Science Foundation SNF, \url{http://www.snf.ch}
 }
 \seealso{Other approaches to estimate \eqn{\gamma} based on the fact that the density is log--concave, thus 
 \eqn{\gamma \in [-1,0]}, are available as the functions \code{\link{pickands}}, \code{\link{falk}}.}

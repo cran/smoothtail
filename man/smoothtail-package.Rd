@@ -17,8 +17,8 @@ Generalized Pareto distribution with shape parameter \eqn{\gamma \in [-1,0]}, th
 \tabular{ll}{
 Package: \tab smoothtail\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2006-11-27\cr
+Version: \tab 1.1.0\cr
+Date: \tab 2007-08-17\cr
 License: \tab GPL version 2 or newer \cr
 }
 Use this package to estimate the shape parameter \eqn{\gamma} of a Generalized Pareto Distribution (GPD). In 
@@ -40,10 +40,10 @@ a GPD with location parameter 0, shape parameter \eqn{\gamma} and scale paramete
 
 This package depends on the package \pkg{logcondens} for estimation of a log--concave density.
 
-Let us shortly clarify, what we mean with log--concave density estimation. Suppose we are given an ordered sample
+Let us shortly clarify what we mean with log--concave density estimation. Suppose we are given an ordered sample
 \eqn{Y_1 < \ldots < Y_n} of i.i.d. random variables having density function \eqn{f}, where \eqn{f = \exp \varphi}
 for a concave function \eqn{\varphi : [-\infty, \infty) \to R}. Following the development in 
-Duembgen and Rufibach (2006), it is then possible to get an estimator \eqn{\hat f_n = \exp \hat \varphi_n} 
+Duembgen and Rufibach (2007), it is then possible to get an estimator \eqn{\hat f_n = \exp \hat \varphi_n} 
 of \eqn{f} via the maximizer \eqn{\hat \varphi_n} of
 
 \deqn{L(\varphi) =  \sum_{i=1}^n \varphi(Y_i) -  \int \exp \varphi (t) d t}
@@ -52,7 +52,7 @@ over all concave functions \eqn{\varphi}. It turns out that \eqn{\hat \varphi_n}
 knots only at (some of the) observation points. Therefore, the infinite-dimensional optimization problem of finding 
 the function \eqn{\hat \varphi_n} boils down to a finite dimensional problem of finding the vector \eqn{(\hat \varphi_n(Y_1),\ldots,\hat \varphi(Y_n))}. 
 How to solve this problem is
-described in Rufibach (2006a, b). The distribution function based on \eqn{\hat f_n} is defined as
+described in Rufibach (2006, 2007) and in a more general setting in Duembgen, Huesler, and Rufibach (2007). The distribution function based on \eqn{\hat f_n} is defined as
 
 \deqn{\hat F_n(x) = \int_{Y_1}^x \hat f_n(t) d t}
 
@@ -63,27 +63,32 @@ Kaspar Rufibach (maintainer), \email{kaspar.rufibach@stanford.edu}, \cr \url{htt
 
 Samuel Mueller, \email{mueller@maths.uwa.edu.au}, \cr \url{http://www.maths.uwa.edu.au/Members/mueller}
 
-Kaspar Rufibach gratefully acknowledges support by the Swiss National Science Foundation SNF, \url{http://www.snf.ch}
+Kaspar Rufibach acknowledges support by the Swiss National Science Foundation SNF, \url{http://www.snf.ch}
 }
 \references{
-Duembgen, L. and Rufibach, K. (2006).
+Duembgen, L. and Rufibach, K. (2007).
 Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
 Preprint, IMSV, University of Bern.
 
+Duembgen, L., Huesler, A. and Rufibach, K. (2007)
+Active set and EM algorithms for log-concave densities based on complete and censored data.
+Technical report 61, IMSV, Univ. of Bern, available at \url{http://arxiv.org/abs/0707.4643}.
+
 Mueller, S. and Rufibach K. (2006a).
 Smooth tail index estimation.
-Preprint.
+Preprint, available at \url{http://arxiv.org/abs/math.ST/0612140}.
 
 Mueller, S. and Rufibach K. (2006b).
 On the max--domain of attraction of distributions with log--concave densities.
 Submitted.
 
-Rufibach, K. (2006a). 
-Computing maximum likelihood estimators of a log--concave density function. 
-To appear in \emph{Journal of Statistical Computation and Simulation.}
-              
-Rufibach K. (2006b). \emph{Log-concave Density Estimation and Bump Hunting for i.i.d. Observations.}
+Rufibach K. (2006) \emph{Log-concave Density Estimation and Bump Hunting for i.i.d. Observations.}
 PhD Thesis, University of Bern, Switzerland and Georg-August University of Goettingen, Germany, 2006.
+\cr Available at \url{http://www.stub.unibe.ch/download/eldiss/06rufibach_k.pdf}.
+
+Rufibach, K. (2007)
+Computing maximum likelihood estimators of a log-concave density function.
+\emph{J. Stat. Comput. Simul.}, \bold{77}, 561--574.
 }
 
 \keyword{distribution}

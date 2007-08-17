@@ -32,7 +32,7 @@ rgpd(n, gam, sigma = 1)}
 }
 \value{
      \code{\link{dgpd}} gives the values of the density function, \code{\link{pgpd}} those of the distribution
-     function, and \code{\link{qgpd}} those of the quantile function of the GPD at \eqn{x, q,} and \eqn{p}, 
+     function, and \code{\link{qgpd}} those of the quantile function of the GPD at \eqn{{\bold x}, {\bold q},} and \eqn{{\bold p}}, 
      respectively. \code{\link{rgpd}} generates \eqn{n} random numbers, returned as an ordered vector.
 }
 \references{

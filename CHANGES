@@ -1,4 +1,10 @@
-smoothtail_1.0 (initial version):
+smoothtail_1.1.0:
+---------------------------------
+- Corrected bug in qgpd: max(p) instead of max(x).
+- Updated references.
+- Modified Pickands' estimator according to paper.
+
+smoothtail 1.0 (initial version)
 ---------------------------------
 - Provide functions to estimate the shape parameter gamma of a Generalized
   Pareto Distribution based on the fact that its density is log-concave

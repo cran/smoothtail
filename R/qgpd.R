@@ -8,7 +8,7 @@ function (p, gam, sigma = 1)
             q[i] <- -Inf
         }
         if (p[i] == 1) {
-            q[i] <- max(x)
+            q[i] <- max(p)
         }
         if (p[i] > 1) {
             q[i] <- Inf

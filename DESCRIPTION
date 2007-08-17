@@ -1,8 +1,8 @@
 Package: smoothtail
 Type: Package
 Title: Smooth Estimation of GPD Shape Parameter
-Version: 1.0
-Date: 2006-11-27
+Version: 1.1.0
+Date: 2007-08-17
 Author: Kaspar Rufibach <kaspar.rufibach@stanford.edu> and Samuel Mueller <mueller@maths.uwa.edu.au>
 Maintainer: Kaspar Rufibach <kaspar.rufibach@stanford.edu>
 Depends: logcondens
@@ -12,5 +12,5 @@ Description: Given independent and identically distributed observations X(1), ..
  function based on a log--concave density function. This procedure is justified by the fact that the GPD density
  is log--concave for gamma in [-1,0].
 License: GPL version 2 or newer
-URL: www.stanford.edu/~kasparr, http://www.maths.uwa.edu.au/Members/mueller
-Packaged: Fri Dec  1 16:45:06 2006; rufibach
+URL: http://www.stanford.edu/~kasparr , http://www.maths.uwa.edu.au/Members/mueller
+Packaged: Fri Aug 17 12:49:23 2007; rufibach

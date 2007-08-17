@@ -20,7 +20,7 @@ function (x)
             est$Fhat)
         v1[k] <- (q1 - q2)/(q2 - q3)
         v2[k] <- (x[n - k2 + 1] - x[n - 2 * k2 + 1])/(x[n - 2 * 
-            k2 + 1] - x[n - k + 1])
+            k2 + 1] - x[n - 4 * k2 + 1])
     }
     v1 <- log(v1)/log(2)
     v2 <- log(v2)/log(2)
