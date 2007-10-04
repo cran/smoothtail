@@ -59,7 +59,7 @@ described in Rufibach (2006, 2007) and in a more general setting in Duembgen, Hu
 for \eqn{x} a real number. The definition of \eqn{\hat F_n} is justified by the fact that \eqn{\hat F_n(Y_1) = 0}.
 }
 \author{
-Kaspar Rufibach (maintainer), \email{kaspar.rufibach@stanford.edu}, \cr \url{http://www.stanford.edu/~kasparr} 
+Kaspar Rufibach (maintainer), \email{kaspar.rufibach@freesurf.ch}, \cr \url{http://www.stanford.edu/~kasparr} 
 
 Samuel Mueller, \email{mueller@maths.uwa.edu.au}, \cr \url{http://www.maths.uwa.edu.au/Members/mueller}
 

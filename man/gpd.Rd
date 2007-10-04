@@ -40,7 +40,7 @@ Pickands, J. (1975). Statistical inference using extreme order statistics.
 \emph{Annals of Statistics}, \bold{3}, 119-131.
 }
 \author{
-Kaspar Rufibach, \email{kaspar.rufibach@stanford.edu}, \cr \url{http://www.stanford.edu/~kasparr} 
+Kaspar Rufibach, \email{kaspar.rufibach@freesurf.ch}, \cr \url{http://www.stanford.edu/~kasparr} 
 
 Samuel Mueller, \email{mueller@maths.uwa.edu.au}, \cr \url{http://www.maths.uwa.edu.au/Members/mueller}}
 
