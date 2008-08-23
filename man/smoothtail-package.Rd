@@ -17,23 +17,24 @@ Generalized Pareto distribution with shape parameter \eqn{\gamma \in [-1,0]}, th
 \tabular{ll}{
 Package: \tab smoothtail\cr
 Type: \tab Package\cr
-Version: \tab 1.1.0\cr
-Date: \tab 2007-08-17\cr
+Version: \tab 1.1.2\cr
+Date: \tab 2008-23-08\cr
 License: \tab GPL version 2 or newer \cr
 }
 Use this package to estimate the shape parameter \eqn{\gamma} of a Generalized Pareto Distribution (GPD). In 
 extreme value theory, \eqn{\gamma} is denoted tail index. We offer three new estimators, all based on the fact 
-that the density function of the GPD is log--concave if \eqn{\gamma \in [-1,0]}. The functions for estimation
+that the density function of the GPD is log--concave if \eqn{\gamma \in [-1,0]}, see Mueller and Rufibach (2006). The functions for estimation
 of the tail index are:
 
 \code{\link{pickands}} \cr
 \code{\link{falk}}\cr
-\code{\link{falkMVUE}}
+\code{\link{falkMVUE}}\cr
+\code{\link{generalizedPick}}
 
 Additionally, functions for density, distribution function, quantile function and random number generation for
 a GPD with location parameter 0, shape parameter \eqn{\gamma} and scale parameter \eqn{\sigma} are provided:
 
-\code{\link{dgpd}} \cr
+\code{\link{dgpd}}\cr
 \code{\link{pgpd}}\cr
 \code{\link{qgpd}}\cr
 \code{\link{rgpd}}.
@@ -59,28 +60,28 @@ described in Rufibach (2006, 2007) and in a more general setting in Duembgen, Hu
 for \eqn{x} a real number. The definition of \eqn{\hat F_n} is justified by the fact that \eqn{\hat F_n(Y_1) = 0}.
 }
 \author{
-Kaspar Rufibach (maintainer), \email{kaspar.rufibach@freesurf.ch}, \cr \url{http://www.stanford.edu/~kasparr} 
+Kaspar Rufibach (maintainer), \email{kaspar.rufibach@gmail.com} 
 
-Samuel Mueller, \email{mueller@maths.uwa.edu.au}, \cr \url{http://www.maths.uwa.edu.au/Members/mueller}
+Samuel Mueller, \email{mueller@maths.uwa.edu.au}, \cr \url{http://www.maths.usyd.edu.au/ut/people?who=S_Mueller}
 
 Kaspar Rufibach acknowledges support by the Swiss National Science Foundation SNF, \url{http://www.snf.ch}
 }
 \references{
 Duembgen, L. and Rufibach, K. (2007).
 Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
-Preprint, IMSV, University of Bern.
+\emph{Bernoulli}, to appear.
 
 Duembgen, L., Huesler, A. and Rufibach, K. (2007)
 Active set and EM algorithms for log-concave densities based on complete and censored data.
 Technical report 61, IMSV, Univ. of Bern, available at \url{http://arxiv.org/abs/0707.4643}.
 
-Mueller, S. and Rufibach K. (2006a).
+Mueller, S. and Rufibach K. (2006).
 Smooth tail index estimation.
-Preprint, available at \url{http://arxiv.org/abs/math.ST/0612140}.
+\emph{J. Stat. Comput. Simul.}, to appear.
 
-Mueller, S. and Rufibach K. (2006b).
+Mueller, S. and Rufibach K. (2008).
 On the max--domain of attraction of distributions with log--concave densities.
-Submitted.
+\emph{Statist. Probab. Lett.}, \bold{78}), 1440--1444.
 
 Rufibach K. (2006) \emph{Log-concave Density Estimation and Bump Hunting for i.i.d. Observations.}
 PhD Thesis, University of Bern, Switzerland and Georg-August University of Goettingen, Germany, 2006.
@@ -122,12 +123,14 @@ legend(1, 0.4, c('true', 'empirical', 'estimated'), col = c(2 : 4), lty = 1)
 falk.logcon <- falk(x)
 falkMVUE.logcon <- falkMVUE(x, omega)
 pick.logcon <- pickands(x)
+genPick.logcon <- generalizedPick(x, c = 0.75, gam0 = -1/3)
 
 # plot smoothed and unsmoothed estimators versus number of order statistics
 plot(0, 0, type = 'n', xlim = c(0,n), ylim = c(-1, 0.2))
-lines(1:n, pick.logcon[,2], col = 1); lines(1:n, pick.logcon[,3], col = 1, lty = 2)
-lines(1:n, falk.logcon[,2], col = 2); lines(1:n, falk.logcon[,3], col = 2, lty = 2)
+lines(1:n, pick.logcon[, 2], col = 1); lines(1:n, pick.logcon[, 3], col = 1, lty = 2)
+lines(1:n, falk.logcon[, 2], col = 2); lines(1:n, falk.logcon[, 3], col = 2, lty = 2)
 lines(1:n, falkMVUE.logcon[,2], col = 3); lines(1:n, falkMVUE.logcon[,3], col = 3, lty = 2)
+lines(1:n, genPick.logcon[, 2], col = 4); lines(1:n, genPick.logcon[, 3], col = 4, lty = 2)
 abline(h = gam, lty = 3)
-legend(11, 0.2, c("Pickands", "Falk", "Falk MVUE"), lty = 1, col = 1:6)
+legend(11, 0.2, c("Pickands", "Falk", "Falk MVUE", "Generalized Pickands'"), lty = 1, col = 1:8)
 }

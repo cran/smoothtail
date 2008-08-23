@@ -40,9 +40,9 @@ Pickands, J. (1975). Statistical inference using extreme order statistics.
 \emph{Annals of Statistics}, \bold{3}, 119-131.
 }
 \author{
-Kaspar Rufibach, \email{kaspar.rufibach@freesurf.ch}, \cr \url{http://www.stanford.edu/~kasparr} 
+Kaspar Rufibach, \email{kaspar.rufibach@gmail.com} 
 
-Samuel Mueller, \email{mueller@maths.uwa.edu.au}, \cr \url{http://www.maths.uwa.edu.au/Members/mueller}}
+Samuel Mueller, \email{mueller@maths.uwa.edu.au}, \cr \url{http://www.maths.usyd.edu.au/ut/people?who=S_Mueller}}
 
 \seealso{Similar functions are provided in the R-packages \pkg{evir} and \pkg{evd}.}
 

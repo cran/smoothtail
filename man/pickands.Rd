@@ -26,21 +26,21 @@ the ordinary Pickands' estimator based on the order statistics.
 \references{
 Mueller, S. and Rufibach K. (2006).
 Smooth tail index estimation.
-Preprint, available at \url{http://arxiv.org/abs/math.ST/0612140}.
+\emph{J. Stat. Comput. Simul.}, to appear.
 
 Pickands, J. (1975).
 Statistical inference using extreme order statistics.
 \emph{Annals of Statistics} \bold{3}, 119--131.
 }
 \author{
-Kaspar Rufibach (maintainer), \email{kaspar.rufibach@freesurf.ch}, \cr \url{http://www.stanford.edu/~kasparr} 
+Kaspar Rufibach (maintainer), \email{kaspar.rufibach@gmail.com} 
 
-Samuel Mueller, \email{mueller@maths.uwa.edu.au}, \cr \url{http://www.maths.uwa.edu.au/Members/mueller}
+Samuel Mueller, \email{mueller@maths.uwa.edu.au}, \cr \url{http://www.maths.usyd.edu.au/ut/people?who=S_Mueller}
 
 Kaspar Rufibach acknowledges support by the Swiss National Science Foundation SNF, \url{http://www.snf.ch}
 }
 \seealso{Other approaches to estimate \eqn{\gamma} based on the fact that the density is log--concave, thus 
-\eqn{\gamma \in [-1,0]}, are available as the functions \code{\link{falk}}, \code{\link{falkMVUE}}.}
+\eqn{\gamma \in [-1,0]}, are available as the functions \code{\link{falk}}, \code{\link{falkMVUE}}, \code{\link{generalizedPick}}.}
 \examples{
 # generate ordered random sample from GPD
 set.seed(1977)

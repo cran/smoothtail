@@ -12,7 +12,7 @@ of \eqn{F} is known. Precisely,
 
 \deqn{\hat \gamma_{\rm{MVUE}} = \hat \gamma_{\rm{MVUE}}(k,n) = \frac{1}{k} \sum_{j=1}^k \log \Bigl(\frac{\omega(F)-H^{-1}((n-j+1)/n)}{\omega(F)-H^{-1}((n-k)/n)}\Bigr), \; \; k=2,\ldots,n-1} 
 
-for $H$ either the empirical or the distribution function based on the log--concave density estimator.
+for \eqn{H} either the empirical or the distribution function based on the log--concave density estimator.
 Note that for any \eqn{k}, \eqn{\hat \gamma_{\rm{MVUE}} : R^n \to (-\infty, 0)}. If \eqn{\hat \gamma_{\rm{MVUE}} 
 \not \in [-1,0)}, then it is likely that the log-concavity assumption is violated.  
 }
@@ -26,7 +26,7 @@ the ordinary Falk MVUE estimator based on the order statistics.
 \references{
 Mueller, S. and Rufibach K. (2006).
 Smooth tail index estimation.
-Preprint, available at \url{http://arxiv.org/abs/math.ST/0612140}.
+\emph{J. Stat. Comput. Simul.}, to appear.
 
 Falk, M. (1994).
 Extreme quantile estimation in \eqn{\delta}-neighborhoods of generalized Pareto distributions.
@@ -37,14 +37,14 @@ Some best parameter estimates for distributions with finite endpoint.
 \emph{Statistics}, \bold{27}, 115--125.
 }
 \author{
-Kaspar Rufibach (maintainer), \email{kaspar.rufibach@freesurf.ch}, \cr \url{http://www.stanford.edu/~kasparr} 
+Kaspar Rufibach (maintainer), \email{kaspar.rufibach@gmail.com} 
 
-Samuel Mueller, \email{mueller@maths.uwa.edu.au}, \cr \url{http://www.maths.uwa.edu.au/Members/mueller}
+Samuel Mueller, \email{mueller@maths.uwa.edu.au}, \cr \url{http://www.maths.usyd.edu.au/ut/people?who=S_Mueller}
 
 Kaspar Rufibach acknowledges support by the Swiss National Science Foundation SNF, \url{http://www.snf.ch}
 }
 \seealso{Other approaches to estimate \eqn{\gamma} based on the fact that the density is log--concave, thus 
-\eqn{\gamma \in [-1,0]}, are available as the functions \code{\link{pickands}}, \code{\link{falk}}.}
+\eqn{\gamma \in [-1,0]}, are available as the functions \code{\link{pickands}}, \code{\link{falk}}, \code{\link{generalizedPick}}.}
 \examples{
 # generate ordered random sample from GPD
 set.seed(1977)

@@ -1,3 +1,8 @@
+smoothtail_1.1.2 (Aug 23, 2008)
+-------------------------------------------------------
+- Added Seger's estimator (functions generalizedPick, lambdaGenPick)
+- Updated references.
+
 smoothtail_1.1.1 (Oct 4, 2007)
 -------------------------------------------------------
 - Updated contact informations.
