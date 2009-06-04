@@ -17,13 +17,13 @@ Generalized Pareto distribution with shape parameter \eqn{\gamma \in [-1,0]}, th
 \tabular{ll}{
 Package: \tab smoothtail\cr
 Type: \tab Package\cr
-Version: \tab 1.1.2\cr
-Date: \tab 2008-23-08\cr
-License: \tab GPL version 2 or newer \cr
+Version: \tab 1.1.3 \cr
+Date: \tab 2009-06-04 \cr
+License: \tab GPL (>=2) \cr
 }
 Use this package to estimate the shape parameter \eqn{\gamma} of a Generalized Pareto Distribution (GPD). In 
 extreme value theory, \eqn{\gamma} is denoted tail index. We offer three new estimators, all based on the fact 
-that the density function of the GPD is log--concave if \eqn{\gamma \in [-1,0]}, see Mueller and Rufibach (2006). The functions for estimation
+that the density function of the GPD is log--concave if \eqn{\gamma \in [-1,0]}, see Mueller and Rufibach (2009). The functions for estimation
 of the tail index are:
 
 \code{\link{pickands}} \cr
@@ -60,28 +60,28 @@ described in Rufibach (2006, 2007) and in a more general setting in Duembgen, Hu
 for \eqn{x} a real number. The definition of \eqn{\hat F_n} is justified by the fact that \eqn{\hat F_n(Y_1) = 0}.
 }
 \author{
-Kaspar Rufibach (maintainer), \email{kaspar.rufibach@gmail.com} 
+Kaspar Rufibach (maintainer), \email{kaspar.rufibach@ifspm.uzh.ch} , \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html}
 
-Samuel Mueller, \email{mueller@maths.uwa.edu.au}, \cr \url{http://www.maths.usyd.edu.au/ut/people?who=S_Mueller}
+Samuel Mueller, \email{s.mueller@maths.usyd.edu.au}, \cr \url{http://www.maths.usyd.edu.au/ut/people?who=S_Mueller}
 
 Kaspar Rufibach acknowledges support by the Swiss National Science Foundation SNF, \url{http://www.snf.ch}
 }
 \references{
-Duembgen, L. and Rufibach, K. (2007).
+Duembgen, L. and Rufibach, K. (2009)
 Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
-\emph{Bernoulli}, to appear.
+\emph{Bernoulli}, \bold{15(1)}, 40--68.  
 
 Duembgen, L., Huesler, A. and Rufibach, K. (2007)
 Active set and EM algorithms for log-concave densities based on complete and censored data.
 Technical report 61, IMSV, Univ. of Bern, available at \url{http://arxiv.org/abs/0707.4643}.
 
-Mueller, S. and Rufibach K. (2006).
+Mueller, S. and Rufibach K. (2009).
 Smooth tail index estimation.
 \emph{J. Stat. Comput. Simul.}, to appear.
 
 Mueller, S. and Rufibach K. (2008).
 On the max--domain of attraction of distributions with log--concave densities.
-\emph{Statist. Probab. Lett.}, \bold{78}), 1440--1444.
+\emph{Statist. Probab. Lett.}, \bold{78}, 1440--1444.
 
 Rufibach K. (2006) \emph{Log-concave Density Estimation and Bump Hunting for i.i.d. Observations.}
 PhD Thesis, University of Bern, Switzerland and Georg-August University of Goettingen, Germany, 2006.

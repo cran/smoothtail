@@ -1,4 +1,4 @@
-"dgpd" <-
+`dgpd` <-
 function (x, gam, sigma = 1) 
 {
     n <- length(x)

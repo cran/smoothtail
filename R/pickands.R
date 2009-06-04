@@ -1,4 +1,4 @@
-"pickands" <-
+`pickands` <-
 function (x) 
 {
     n <- length(x)

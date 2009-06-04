@@ -10,7 +10,7 @@ given in Theorem 4.1 of Segers (2005) and is called by \code{\link{generalizedPi
 It is not intended to be called by the user.
 }
 \references{
-Mueller, S. and Rufibach K. (2006).
+Mueller, S. and Rufibach K. (2009).
 Smooth tail index estimation.
 \emph{J. Stat. Comput. Simul.}, to appear.
 
@@ -19,9 +19,9 @@ Generalized Pickands estimators for the extreme value index.
 \emph{J. Statist. Plann. Inference}, \bold{128}, 381--396.
 }
 \author{
-Kaspar Rufibach (maintainer), \email{kaspar.rufibach@gmail.com} 
+Kaspar Rufibach (maintainer), \email{kaspar.rufibach@ifspm.uzh.ch} 
 
-Samuel Mueller, \email{mueller@maths.uwa.edu.au}, \cr \url{http://www.maths.usyd.edu.au/ut/people?who=S_Mueller}
+Samuel Mueller, \email{s.mueller@maths.usyd.edu.au}, \cr \url{http://www.maths.usyd.edu.au/ut/people?who=S_Mueller}
 
 Kaspar Rufibach acknowledges support by the Swiss National Science Foundation SNF, \url{http://www.snf.ch}
 }

@@ -1,4 +1,4 @@
-"qgpd" <-
+`qgpd` <-
 function (p, gam, sigma = 1) 
 {
     n <- length(p)

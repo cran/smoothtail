@@ -17,7 +17,7 @@ Note that for any \eqn{k}, \eqn{\hat \gamma_{\rm{Falk}} : R^n \to (-\infty, 0)}.
 the ordinary Falk's estimator based on the order statistics.
 }
 \references{
-Mueller, S. and Rufibach K. (2006).
+Mueller, S. and Rufibach K. (2009).
 Smooth tail index estimation.
 \emph{J. Stat. Comput. Simul.}, to appear.
 
@@ -26,9 +26,9 @@ Some best parameter estimates for distributions with finite endpoint.
 \emph{Statistics}, \bold{27}, 115--125.
 }
 \author{
-Kaspar Rufibach (maintainer), \email{kaspar.rufibach@gmail.com} 
+Kaspar Rufibach (maintainer), \email{kaspar.rufibach@ifspm.uzh.ch} 
 
-Samuel Mueller, \email{mueller@maths.uwa.edu.au}, \cr \url{http://www.maths.usyd.edu.au/ut/people?who=S_Mueller}
+Samuel Mueller, \email{s.mueller@maths.usyd.edu.au}, \cr \url{http://www.maths.usyd.edu.au/ut/people?who=S_Mueller}
 
 Kaspar Rufibach acknowledges support by the Swiss National Science Foundation SNF, \url{http://www.snf.ch}
 }

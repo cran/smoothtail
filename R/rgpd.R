@@ -1,4 +1,4 @@
-"rgpd" <-
+`rgpd` <-
 function (n, gam, sigma = 1) 
 {
     u <- runif(n, 0, 1)

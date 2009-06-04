@@ -1,4 +1,4 @@
-"falkMVUE" <-
+`falkMVUE` <-
 function (x, omega) 
 {
     n <- length(x)

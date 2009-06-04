@@ -21,7 +21,7 @@ If \eqn{\hat \gamma_{\rm{Segers}} \not \in [-1,0)}, then it is likely that the l
 \value{n x 3 matrix with columns: indices \eqn{k}, Segers' estimator using the smoothing method, and
 the ordinary Segers' estimator based on the order statistics.}
 \references{
-Mueller, S. and Rufibach K. (2006).
+Mueller, S. and Rufibach K. (2009).
 Smooth tail index estimation.
 \emph{J. Stat. Comput. Simul.}, to appear.
 
@@ -30,9 +30,9 @@ Generalized Pickands estimators for the extreme value index.
 \emph{J. Statist. Plann. Inference}, \bold{128}, 381--396.
 }
 \author{
-Kaspar Rufibach (maintainer), \email{kaspar.rufibach@gmail.com} 
+Kaspar Rufibach (maintainer), \email{kaspar.rufibach@ifspm.uzh.ch} 
 
-Samuel Mueller, \email{mueller@maths.uwa.edu.au}, \cr \url{http://www.maths.usyd.edu.au/ut/people?who=S_Mueller}
+Samuel Mueller, \email{s.mueller@maths.usyd.edu.au}, \cr \url{http://www.maths.usyd.edu.au/ut/people?who=S_Mueller}
 
 Kaspar Rufibach acknowledges support by the Swiss National Science Foundation SNF, \url{http://www.snf.ch}
 }
