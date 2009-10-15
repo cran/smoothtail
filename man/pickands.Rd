@@ -26,7 +26,7 @@ the ordinary Pickands' estimator based on the order statistics.
 \references{
 Mueller, S. and Rufibach K. (2009).
 Smooth tail index estimation.
-\emph{J. Stat. Comput. Simul.}, to appear.
+\emph{J. Stat. Comput. Simul.}, \bold{79}, 1155--1167.
 
 Pickands, J. (1975).
 Statistical inference using extreme order statistics.

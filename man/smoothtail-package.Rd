@@ -17,8 +17,8 @@ Generalized Pareto distribution with shape parameter \eqn{\gamma \in [-1,0]}, th
 \tabular{ll}{
 Package: \tab smoothtail\cr
 Type: \tab Package\cr
-Version: \tab 1.1.3 \cr
-Date: \tab 2009-06-04 \cr
+Version: \tab 1.1.4 \cr
+Date: \tab 2009-10-15 \cr
 License: \tab GPL (>=2) \cr
 }
 Use this package to estimate the shape parameter \eqn{\gamma} of a Generalized Pareto Distribution (GPD). In 
@@ -77,7 +77,7 @@ Technical report 61, IMSV, Univ. of Bern, available at \url{http://arxiv.org/abs
 
 Mueller, S. and Rufibach K. (2009).
 Smooth tail index estimation.
-\emph{J. Stat. Comput. Simul.}, to appear.
+\emph{J. Stat. Comput. Simul.}, \bold{79}, 1155--1167.
 
 Mueller, S. and Rufibach K. (2008).
 On the max--domain of attraction of distributions with log--concave densities.

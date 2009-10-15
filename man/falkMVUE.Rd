@@ -26,7 +26,7 @@ the ordinary Falk MVUE estimator based on the order statistics.
 \references{
 Mueller, S. and Rufibach K. (2009).
 Smooth tail index estimation.
-\emph{J. Stat. Comput. Simul.}, to appear.
+\emph{J. Stat. Comput. Simul.}, \bold{79}, 1155--1167.
 
 Falk, M. (1994).
 Extreme quantile estimation in \eqn{\delta}-neighborhoods of generalized Pareto distributions.

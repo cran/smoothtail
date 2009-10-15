@@ -12,7 +12,7 @@ It is not intended to be called by the user.
 \references{
 Mueller, S. and Rufibach K. (2009).
 Smooth tail index estimation.
-\emph{J. Stat. Comput. Simul.}, to appear.
+\emph{J. Stat. Comput. Simul.}, \bold{79}, 1155--1167.
 
 Segers, J. (2005).
 Generalized Pickands estimators for the extreme value index.
