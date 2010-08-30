@@ -13,11 +13,13 @@ and \eqn{\lambda} the mixing measure given in Segers (2005), Theorem 4.1, (i).
 Note that for any \eqn{k}, \eqn{\hat \gamma^k_{\rm{Segers}} : R^n \to (-\infty, \infty)}. 
 If \eqn{\hat \gamma_{\rm{Segers}} \not \in [-1,0)}, then it is likely that the log-concavity assumption is violated.  
 }
-\usage{generalizedPick(x, c, gam0)}
+\usage{generalizedPick(est, c, gam0, ks = NA)}
 \arguments{
-\item{x}{Sample of strictly increasing observations.}
-\item{c}{Number in \eqn{(0,1)}, determining the spacings that are used.}
-\item{gam0}{Number in \eqn{R \setminus 0.5}, specifying the mixing measure.}}
+    \item{est}{Log-concave density estimate based on the sample as output by \code{logConDens} (a \code{dlc} object).}
+    \item{c}{Number in \eqn{(0,1)}, determining the spacings that are used.}
+    \item{gam0}{Number in \eqn{R \setminus 0.5}, specifying the mixing measure.}
+    \item{ks}{Indices \eqn{k} at which Falk's estimate should be computed. If set to \code{NA} defaults to \eqn{4, \ldots, n}.}
+    }
 \value{n x 3 matrix with columns: indices \eqn{k}, Segers' estimator using the smoothing method, and
 the ordinary Segers' estimator based on the order statistics.}
 \references{
@@ -45,8 +47,11 @@ n <- 20
 gam <- -0.75
 x <- rgpd(n, gam)
 
+## generate dlc object
+est <- logConDens(x, smoothed = FALSE, print = FALSE, gam = NULL, xs = NULL)
+
 # compute tail index estimators
-genPick.logcon <- generalizedPick(x, c = 0.75, gam0 = -1/3)
+generalizedPick(est, c = 0.75, gam0 = -1/3)
 }
 
 \keyword{distribution}

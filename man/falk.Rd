@@ -11,9 +11,11 @@ for $H$ either the empirical or the distribution function based on the log--conc
 Note that for any \eqn{k}, \eqn{\hat \gamma_{\rm{Falk}} : R^n \to (-\infty, 0)}. If 
 \eqn{\hat \gamma_{\rm{Falk}} \not \in [-1,0)}, then it is likely that the log-concavity assumption is violated.  
 }
-\usage{falk(x)}
-\arguments{\item{x}{Sample of strictly increasing observations.}}
-\value{n x 3 matrix with columns: indices \eqn{k}, Falk's estimator using the smoothing method, and
+\usage{falk(est, ks = NA)}
+\arguments{
+    \item{est}{Log-concave density estimate based on the sample as output by \code{logConDens} (a \code{dlc} object).}
+    \item{ks}{Indices \eqn{k} at which Falk's estimate should be computed. If set to \code{NA} defaults to \eqn{3, \ldots, n-1}.}}
+\value{n x 3 matrix with columns: indices \eqn{k}, Falk's estimator based on the log-concave density estimate, and
 the ordinary Falk's estimator based on the order statistics.
 }
 \references{
@@ -41,8 +43,11 @@ n <- 20
 gam <- -0.75
 x <- rgpd(n, gam)
 
-# compute tail index estimators
-falk(x)
+## generate dlc object
+est <- logConDens(x, smoothed = FALSE, print = FALSE, gam = NULL, xs = NULL)
+
+# compute tail index estimator
+falk(est)
 }
 
 \keyword{distribution}

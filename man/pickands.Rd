@@ -18,9 +18,12 @@ if \eqn{H} is the empirical distribution function and
 \deqn{r_k(H) = k / 4}
 
 if \eqn{H = \hat F_n}.}
-\usage{pickands(x)}
-\arguments{\item{x}{Sample of strictly increasing observations.}}
-\value{n x 3 matrix with columns: indices \eqn{k}, Pickands' estimator using the smoothing method, and
+\usage{pickands(est, ks = NA)}
+\arguments{
+    \item{est}{Log-concave density estimate based on the sample as output by \code{logConDens} (a \code{dlc} object).}
+    \item{ks}{Indices \eqn{k} at which Falk's estimate should be computed. If set to \code{NA} defaults to \eqn{4, \ldots, n}.}
+    }
+\value{n x 3 matrix with columns: indices \eqn{k}, Pickands' estimator using the log-concave density estimate, and
 the ordinary Pickands' estimator based on the order statistics.
 }
 \references{
@@ -48,8 +51,11 @@ n <- 20
 gam <- -0.75
 x <- rgpd(n, gam)
 
+## generate dlc object
+est <- logConDens(x, smoothed = FALSE, print = FALSE, gam = NULL, xs = NULL)
+
 # compute tail index estimators
-pickands(x)
+pickands(est)
 }
 
 \keyword{distribution}

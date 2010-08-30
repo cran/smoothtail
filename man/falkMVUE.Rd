@@ -16,11 +16,13 @@ for \eqn{H} either the empirical or the distribution function based on the log--
 Note that for any \eqn{k}, \eqn{\hat \gamma_{\rm{MVUE}} : R^n \to (-\infty, 0)}. If \eqn{\hat \gamma_{\rm{MVUE}} 
 \not \in [-1,0)}, then it is likely that the log-concavity assumption is violated.  
 }
-\usage{falkMVUE(x, omega)}
+\usage{falkMVUE(est, omega, ks = NA)}
 \arguments{
-\item{x}{Sample of strictly increasing observations.}
-\item{omega}{Known endpoint. Make sure that \eqn{\omega \ge X_{(n)}}.}}
-\value{n x 3 matrix with columns: indices \eqn{k}, Falk's MVUE estimator using the smoothing method, and
+    \item{est}{Log-concave density estimate based on the sample as output by \code{logConDens} (a \code{dlc} object).}
+    \item{omega}{Known endpoint. Make sure that \eqn{\omega \ge X_{(n)}}.}
+    \item{ks}{Indices \eqn{k} at which Falk's estimate should be computed. If set to \code{NA} defaults to \eqn{2, \ldots, n-1}.}
+    }
+\value{n x 3 matrix with columns: indices \eqn{k}, Falk's MVUE estimator using the log-concave density estimate, and
 the ordinary Falk MVUE estimator based on the order statistics.
 }
 \references{
@@ -52,9 +54,12 @@ n <- 20
 gam <- -0.75
 x <- rgpd(n, gam)
 
+## generate dlc object
+est <- logConDens(x, smoothed = FALSE, print = FALSE, gam = NULL, xs = NULL)
+
 # compute tail index estimators
 omega <- -1 / gam
-falkMVUE(x, omega)
+falkMVUE(est, omega)
 }
 
 \keyword{distribution}
