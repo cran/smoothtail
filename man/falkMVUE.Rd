@@ -39,7 +39,7 @@ Some best parameter estimates for distributions with finite endpoint.
 \emph{Statistics}, \bold{27}, 115--125.
 }
 \author{
-Kaspar Rufibach (maintainer), \email{kaspar.rufibach@ifspm.uzh.ch} 
+Kaspar Rufibach (maintainer), \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch} 
 
 Samuel Mueller, \email{s.mueller@maths.usyd.edu.au}, \cr \url{http://www.maths.usyd.edu.au/ut/people?who=S_Mueller}
 

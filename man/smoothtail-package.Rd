@@ -17,8 +17,8 @@ Generalized Pareto distribution with shape parameter \eqn{\gamma \in [-1,0]}, th
 \tabular{ll}{
 Package: \tab smoothtail \cr
 Type: \tab Package\cr
-Version: \tab 2.0.0 \cr
-Date: \tab 2010-08-30 \cr
+Version: \tab 2.0.1 \cr
+Date: \tab 2011-11-29 \cr
 License: \tab GPL (>=2) \cr
 }
 Use this package to estimate the shape parameter \eqn{\gamma} of a Generalized Pareto Distribution (GPD). In 
@@ -61,7 +61,7 @@ described in Rufibach (2006, 2007) and in a more general setting in Duembgen, Hu
 for \eqn{x} a real number. The definition of \eqn{\hat F_n} is justified by the fact that \eqn{\hat F_n(Y_1) = 0}.
 }
 \author{
-Kaspar Rufibach (maintainer), \email{kaspar.rufibach@ifspm.uzh.ch} , \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html}
+Kaspar Rufibach (maintainer), \email{kaspar.rufibach@gmail.com} , \cr \url{http://www.kasparrufibach.ch}
 
 Samuel Mueller, \email{s.mueller@maths.usyd.edu.au}, \cr \url{http://www.maths.usyd.edu.au/ut/people?who=S_Mueller}
 

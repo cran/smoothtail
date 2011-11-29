@@ -19,7 +19,7 @@ Generalized Pickands estimators for the extreme value index.
 \emph{J. Statist. Plann. Inference}, \bold{128}, 381--396.
 }
 \author{
-Kaspar Rufibach (maintainer), \email{kaspar.rufibach@ifspm.uzh.ch} 
+Kaspar Rufibach (maintainer), \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch} 
 
 Samuel Mueller, \email{s.mueller@maths.usyd.edu.au}, \cr \url{http://www.maths.usyd.edu.au/ut/people?who=S_Mueller}
 

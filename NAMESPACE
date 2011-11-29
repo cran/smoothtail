@@ -1,0 +1,10 @@
+## which functions shall be accessible by the users?
+export(dgpd,
+falk,
+falkMVUE,
+generalizedPick,
+lambdaGenPick,
+pgpd,
+pickands,
+qgpd,
+rgpd)

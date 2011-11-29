@@ -1,6 +1,11 @@
-smoothtail_2.0.0 (August , 2010)
+smoothtail_2.0.1 (2011)
 -------------------------------------------------------
-- Updated according to the changes in logcondens 2.0.0.
+- Added Namespace.
+- Updated coordinates of KR.
+
+smoothtail_2.0.0 (August 30, 2010)
+-------------------------------------------------------
+- Updated to reflect recent changes in logcondens 2.0.0.
 
 smoothtail_1.1.4 (October 15, 2009)
 -------------------------------------------------------
