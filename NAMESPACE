@@ -8,3 +8,6 @@ pgpd,
 pickands,
 qgpd,
 rgpd)
+
+importFrom(logcondens,
+            quantilesLogConDens)

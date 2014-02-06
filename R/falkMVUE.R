@@ -19,7 +19,7 @@ if (omega < x[n]){
         
     # calculate quantiles 
     c <- 1:n
-    q <- quantilesLogConDens(ps = c / n, est)[, "quantile"]
+    q <- logcondens::quantilesLogConDens(ps = c / n, est)[, "quantile"]
 
     k0 <- 2:(n - 1)
     if (identical(NA, ks)){ks <- k0}

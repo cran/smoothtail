@@ -38,7 +38,7 @@ Statistical inference using extreme order statistics.
 \author{
 Kaspar Rufibach (maintainer), \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch} 
 
-Samuel Mueller, \email{s.mueller@maths.usyd.edu.au}, \cr \url{http://www.maths.usyd.edu.au/ut/people?who=S_Mueller}
+Samuel Mueller, \email{samuel.mueller@sydney.edu.au}, \cr \url{www.maths.usyd.edu.au/ut/people?who=S_Mueller}
 
 Kaspar Rufibach acknowledges support by the Swiss National Science Foundation SNF, \url{http://www.snf.ch}
 }

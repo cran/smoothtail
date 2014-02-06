@@ -13,7 +13,7 @@ x <- est$xn
         
 # calculate quantiles 
 c <- 1:n
-q <- quantilesLogConDens(ps = c / n, est)[, "quantile"]
+q <- logcondens::quantilesLogConDens(ps = c / n, est)[, "quantile"]
 
 v1 <- 1:n * NA
 v2 <- v1

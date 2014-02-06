@@ -13,7 +13,7 @@ res <- NA
         
 # calculate quantiles 
 c <- 1:n
-q <- quantilesLogConDens(ps = c / n, est)[, "quantile"]
+q <- logcondens::quantilesLogConDens(ps = c / n, est)[, "quantile"]
 
 v1 <- 1:n * NA
 v2 <- v1 
@@ -26,9 +26,9 @@ for (k in ks){
     k2 <- floor(k / 4)
     
     # Pickands based on quantiles of log-concave 
-    q1 <- quantilesLogConDens((n - k / 4 + 1) / n, est)[, "quantile"]
-    q2 <- quantilesLogConDens((n - k / 2 + 1) / n, est)[, "quantile"]
-    q3 <- quantilesLogConDens((n - k     + 1) / n, est)[, "quantile"]
+    q1 <- logcondens::quantilesLogConDens((n - k / 4 + 1) / n, est)[, "quantile"]
+    q2 <- logcondens::quantilesLogConDens((n - k / 2 + 1) / n, est)[, "quantile"]
+    q3 <- logcondens::quantilesLogConDens((n - k     + 1) / n, est)[, "quantile"]
     v1[k] <- (q1 - q2) / (q2 - q3)
 
     # Pickands based on order statistics 

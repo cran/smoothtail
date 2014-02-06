@@ -10,7 +10,7 @@ x <- est$xn
 delta <- abs(gam0 + 1 / 2) - 1 / 2
 res <- NA
 w <- 1:n
-q <- quantilesLogConDens(ps = w / n, est)[, "quantile"]
+q <- logcondens::quantilesLogConDens(ps = w / n, est)[, "quantile"]
 v1 <- 1:n * NA
 v2 <- v1
 
