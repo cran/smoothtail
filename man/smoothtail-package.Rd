@@ -8,7 +8,7 @@
 \title{Smooth Estimation of GPD Shape Parameter}
 
 \description{Given independent and identically distributed observations \eqn{X_1 < \ldots < X_n} from a 
-Generalized Pareto distribution with shape parameter \eqn{\gamma \in [-1,0]}, this package offers three 
+Generalized Pareto distribution with shape parameter \eqn{\gamma \in [-1,0]}, offers three 
  methods to compute estimates of \eqn{\gamma}. The estimates are based on the principle of replacing the order 
  statistics \eqn{X_{(1)}, \ldots, X_{(n)}} of the sample by quantiles \eqn{\hat X_{(1)}, \ldots, \hat X_{(n)}} of the distribution function \eqn{\hat F_n} based on the 
  log--concave density estimator \eqn{\hat f_n}. This procedure is justified by the fact that the GPD density is 
@@ -17,8 +17,8 @@ Generalized Pareto distribution with shape parameter \eqn{\gamma \in [-1,0]}, th
 \tabular{ll}{
 Package: \tab smoothtail \cr
 Type: \tab Package\cr
-Version: \tab 2.0.3 \cr
-Date: \tab 2014-02-06 \cr
+Version: \tab 2.0.4 \cr
+Date: \tab 2015-07-03 \cr
 License: \tab GPL (>=2) \cr
 }
 Use this package to estimate the shape parameter \eqn{\gamma} of a Generalized Pareto Distribution (GPD). In 
@@ -85,7 +85,7 @@ On the max--domain of attraction of distributions with log--concave densities.
 
 Rufibach K. (2006) \emph{Log-concave Density Estimation and Bump Hunting for i.i.d. Observations.}
 PhD Thesis, University of Bern, Switzerland and Georg-August University of Goettingen, Germany, 2006.
-\cr Available at \url{http://www.stub.unibe.ch/download/eldiss/06rufibach_k.pdf}.
+\cr Available at \url{http://www.zb.unibe.ch/download/eldiss/06rufibach_k.pdf}.
 
 Rufibach, K. (2007)
 Computing maximum likelihood estimators of a log-concave density function.

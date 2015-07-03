@@ -9,5 +9,5 @@ pickands,
 qgpd,
 rgpd)
 
-importFrom(logcondens,
-            quantilesLogConDens)
+importFrom(stats, runif)
+importFrom(logcondens, quantilesLogConDens)
