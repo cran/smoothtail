@@ -17,8 +17,8 @@ Generalized Pareto distribution with shape parameter \eqn{\gamma \in [-1,0]}, of
 \tabular{ll}{
 Package: \tab smoothtail \cr
 Type: \tab Package\cr
-Version: \tab 2.0.4 \cr
-Date: \tab 2015-07-03 \cr
+Version: \tab 2.0.5 \cr
+Date: \tab 2016-07-12 \cr
 License: \tab GPL (>=2) \cr
 }
 Use this package to estimate the shape parameter \eqn{\gamma} of a Generalized Pareto Distribution (GPD). In 

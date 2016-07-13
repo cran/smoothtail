@@ -1,8 +1,8 @@
 Package: smoothtail
 Type: Package
 Title: Smooth Estimation of GPD Shape Parameter
-Version: 2.0.4
-Date: 2015-07-03
+Version: 2.0.5
+Date: 2016-07-12
 Author: Kaspar Ru{f}{i}bach <kaspar.rufibach@gmail.com> and Samuel Mueller <samuel.mueller@sydney.edu.au>
 Maintainer: Kaspar Rufibach <kaspar.rufibach@gmail.com>
 Depends: logcondens (>= 2.0.0)
@@ -11,7 +11,7 @@ Description: Given independent and identically distributed observations X(1), ..
 License: GPL (>= 2)
 URL: http://www.kasparrufibach.ch,
         www.maths.usyd.edu.au/ut/people?who=S_Mueller
-Packaged: 2015-07-04 12:34:15 UTC; rufibach
 NeedsCompilation: no
+Packaged: 2016-07-12 13:22:28 UTC; rufiback
 Repository: CRAN
-Date/Publication: 2015-07-04 15:16:29
+Date/Publication: 2016-07-13 10:19:42

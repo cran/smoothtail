@@ -1,6 +1,6 @@
-4605cd048cf302a78fd525f1393fa127 *DESCRIPTION
+18064874c1675733d9bf557d5796c21c *DESCRIPTION
 ad157c13dba1fe713089f54107ddea8a *NAMESPACE
-9aaf36b10d0ccfe93dbdc7f67a4d5bb9 *NEWS
+35b522f73157989e4e078e08590985ce *NEWS
 7e3acd2b9430879e58e6d2ce415d4d5d *R/dgpd.r
 5e7d1fb607cfea3b10129df8aa5c2746 *R/falk.r
 df9806e651ae61603b53d1f3e429069d *R/falkMVUE.r
@@ -16,4 +16,4 @@ defaa6691f8326ebb3194d1e4c8fc941 *R/rgpd.r
 3a90852af5fe1ca53536b77ee79dc929 *man/gpd.Rd
 1e5bc19c140e45d138bd06e4d1fc2fa1 *man/lambdaGenPick.Rd
 3137ed7b5076a46b1fba8f381c359954 *man/pickands.Rd
-a0d62d0a5a66fbc530f919f65c6a41eb *man/smoothtail-package.Rd
+b496cc303725c6e755d3ef2c66286ce1 *man/smoothtail-package.Rd
