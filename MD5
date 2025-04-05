@@ -1,6 +1,6 @@
-18064874c1675733d9bf557d5796c21c *DESCRIPTION
+6866ec5fcf3709e7f5e4ab7e960deb56 *DESCRIPTION
 ad157c13dba1fe713089f54107ddea8a *NAMESPACE
-35b522f73157989e4e078e08590985ce *NEWS
+64a5091875e9bc20f3f4a7b7065bf6f7 *NEWS
 7e3acd2b9430879e58e6d2ce415d4d5d *R/dgpd.r
 5e7d1fb607cfea3b10129df8aa5c2746 *R/falk.r
 df9806e651ae61603b53d1f3e429069d *R/falkMVUE.r
@@ -10,10 +10,10 @@ b740dbdba0ae2ceaa3196aa987c3a34e *R/lambdaGenPick.r
 daf0afe2a8c25521850b593920f601d3 *R/pickands.r
 908e83f85b93a3c334f9bfc64309bea9 *R/qgpd.r
 defaa6691f8326ebb3194d1e4c8fc941 *R/rgpd.r
-14414b8deb631a08248b5f7dd45ab391 *man/falk.Rd
-0be9119ab435c08df993d34f8984e62c *man/falkMVUE.Rd
-1f6d5b2dfea18d8e39cd4875262695c2 *man/generalizedPick.Rd
-3a90852af5fe1ca53536b77ee79dc929 *man/gpd.Rd
-1e5bc19c140e45d138bd06e4d1fc2fa1 *man/lambdaGenPick.Rd
-3137ed7b5076a46b1fba8f381c359954 *man/pickands.Rd
-b496cc303725c6e755d3ef2c66286ce1 *man/smoothtail-package.Rd
+f2f6330379af3265ced0c41461e419e0 *man/falk.Rd
+357872b36b0266228d3152f72141d410 *man/falkMVUE.Rd
+af5101f97faef0da13a85eba87746101 *man/generalizedPick.Rd
+cc9538cbfa3f27a389d337188f92e5a6 *man/gpd.Rd
+9aacc626648c62ebc5af14b830b0944c *man/lambdaGenPick.Rd
+d9ece6dab23dcd14de1840235910c6a2 *man/pickands.Rd
+f7122f7f40f96ce4853aaca1ce73bd61 *man/smoothtail-package.Rd

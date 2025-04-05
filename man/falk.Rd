@@ -30,7 +30,7 @@ Some best parameter estimates for distributions with finite endpoint.
 \author{
 Kaspar Rufibach (maintainer), \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch} 
 
-Samuel Mueller, \email{samuel.mueller@sydney.edu.au}, \cr \url{www.maths.usyd.edu.au/ut/people?who=S_Mueller}
+Samuel Mueller, \email{samuel.muller@mq.edu.au}
 
 Kaspar Rufibach acknowledges support by the Swiss National Science Foundation SNF, \url{http://www.snf.ch}
 }

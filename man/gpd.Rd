@@ -42,7 +42,7 @@ Pickands, J. (1975). Statistical inference using extreme order statistics.
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch} 
 
-Samuel Mueller, \email{samuel.mueller@sydney.edu.au}, \cr \url{www.maths.usyd.edu.au/ut/people?who=S_Mueller}}
+Samuel Mueller, \email{samuel.muller@mq.edu.au}}
 
 \seealso{Similar functions are provided in the R-packages \pkg{evir} and \pkg{evd}.}
 
